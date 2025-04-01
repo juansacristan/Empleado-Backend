@@ -1,0 +1,24 @@
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "description": "Empleados Backends",
+  "main": "index.js",
+  "scripts": {
+    "dev": "node --watch ./src/index.js"
+  },
+  "dependencies": {
+    "express": "^5.1.0",
+    "mongoose": "^8.13.1"
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/juansacristan/Empleado-Backend.git"
+  },
+  "author": "Juan Sacristan",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/juansacristan/Empleado-Backend/issues"
+  },
+  "homepage": "https://github.com/juansacristan/Empleado-Backend#readme"
+}
