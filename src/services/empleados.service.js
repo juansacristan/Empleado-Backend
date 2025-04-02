@@ -20,11 +20,18 @@ async function dbUpdateByIdEmpleado (id){
     return await EmpleadoModel.findById(id);
 }
 
+async function dbGetByEmpleadoCode(codigo) {
+    return await EmpleadoModel.findOne(
+       {codigo: codigo}
+     );
+ }
+
 module.exports ={
     dbInsertEmpleado,
     dbGetEmpleado,
     dbDeleteEmpleado,
     dbGetByIdEmpleado,
-    dbUpdateByIdEmpleado
+    dbUpdateByIdEmpleado,
+    dbGetByEmpleadoCode
 
 }

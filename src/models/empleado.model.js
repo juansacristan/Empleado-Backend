@@ -1,7 +1,7 @@
 const mongoose = require ('mongoose')
 
 const EmpleadoSchema = new mongoose.Schema({
-    codigo:{
+    _id:{
         type: Number
     },
     nombre:{
@@ -13,9 +13,13 @@ const EmpleadoSchema = new mongoose.Schema({
     apellido2:{
         type: String
     },
-    codigo_departamento:{
-        type: Number
+    codigo_area:{
+        type: mongoose.Schema.ObjectId,
+        ref: 'area',
+        required: true
     }
+},{
+    versionKey: false
 });
 
 const EmpleadoModel = mongoose.model(

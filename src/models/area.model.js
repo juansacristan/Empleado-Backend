@@ -7,9 +7,11 @@ const AreaSchema = new mongoose.Schema({
     nombre:{
         type: String
     }
+},{
+    versionKey: false
 });
 const AreaModel = mongoose.model(
-    'areas',
+    'area',
     AreaSchema
 )
 
